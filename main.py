@@ -25,12 +25,12 @@ for _ in turtles:
     all_turtles.append(new_turtle)
 
 if user_bet:
-    is_race_on = True
+    race_is_on = True
 
-while is_race_on:
+while race_is_on:
     for turtle in all_turtles:
         if turtle.xcor() >= 215:
-            is_race_on = False
+            race_is_on = False
             winning_color = turtle.pencolor()
             if turtles[winning_color]["name"] == user_bet:
                 print(f"You've won! The winner is {turtles[winning_color]['name']}.")
